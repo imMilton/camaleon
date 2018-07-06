@@ -5,27 +5,58 @@
 
 @import "compass/reset";
 
+@import "andy";
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
+
+@mixin mq($min) {
+    @media only screen and (min-width: $min) {
+        @content;
+    }
+}
+
 body{
-	font-size: 16px;
+	font-size: $base-font-size;
 	background-color: #fff;
 	font-family: "Roboto";
 }
 
 header.header{
-	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	background-color: #212121;
+	height: 75px;
+	font-size: 14px;
 	.container{
 		display: flex;
 		align-items: center;
+		.region-header{
+			flex: 1;
+		}
+		.region-primary-menu{
+			flex: 2;
+		}
+		.region-secondary-menu{
+			flex: 1;
+		}
 		.block-system-branding-block{
 			display: flex;
 			align-items: center;
 			.site-name{
 				padding: 1rem;
 				font-weight: 700;
+				color: #eee;
 				a{
 					text-decoration: none;
+					color: #eee;
+				}
+			}
+			.site-logo{
+				img{
+					display: block;
+					width: 100%;
+					height: auto;
 				}
 			}
 		}
@@ -37,7 +68,8 @@ header.header{
 					a{
 						padding: .5rem;
 						text-decoration: none;
-						color: #333;
+						color: #eee;
+						font-size: 14px;
 						&.is-active{
 							text-decoration: underline;
 						}
@@ -59,19 +91,25 @@ nav.breadcrumb{
 	}
 }
 
-$s: all and (min-width: 560px) and (max-width: 850px);
-$m: all and (min-width: 851px) and (max-width: 1024px);
-$l: all and (min-width: 1025px) and (max-width: 1280px);
-$xl: all and (min-width: 1201px) and (max-width: 1440px);
+$s: 420px;
+$m: 768px;
+$l: 1024px;
+$xl: 1280px;
 
 .container{
 	width: 320px;
 	margin: auto; 
-	@media all and (min-width: 1025px) and (max-width: 1280px){
-		width: 1120px;
+	@include mq($s){
+		width: 380px;
 	}
-	@media all and (min-width: 1281px) and (max-width: 1440px){
-		width: 1400px;
+	@include mq($m){
+		width: 720px;
+	}
+	@include mq($l){
+		width: 980px;
+	}
+	@include mq($xl){
+		width: 1220px;
 	}
 }
 
@@ -115,15 +153,15 @@ h1{
 }
 
 h2{
-	font-size: 3rem;
-}
-
-h3{
 	font-size: 2.5rem;
 }
 
-h4{
+h3{
 	font-size: 2rem;
+}
+
+h4{
+	font-size: 1.75rem;
 }
 
 h5{
@@ -140,15 +178,58 @@ h1, h2, h3, h4, h5, h6{
 	font-weight: 700;
 }
 
-ul{
-	li{
+.item-list{
 
+	ul{
+		li{
+			padding: .5rem 0;
+			list-style: square;
+			a{
+				padding: .5rem 0;
+			}
+		}
 	}
+
+	ol{
+		li{
+			padding: .5rem 0;
+			list-style: decimal;
+			a{
+				padding: .5rem 0;
+			}
+		}
+	}
+
 }
 
-ol{
-	li{
+a{
+	color: #212121;
+}
 
+table{
+	margin: 1rem 0;
+	border: 1px solid #ccc;
+	width: 100%;
+	caption{
+		margin: 1rem 0;
+	}
+	thead{
+		tr{
+			th{
+				padding: 1rem;
+				background-color: #ccc;
+				border: 1px solid #333;
+			}
+		}
+
+	}
+	tbody{
+		tr{
+			td{
+				padding: 1rem;
+				border: 1px solid #ccc;
+			}
+		}
 	}
 }
 
@@ -274,6 +355,12 @@ article.comment{
     font-size: 13px;
     color: #666;
 }
+.node__links{
+	ul.inline li{
+		display: flex;
+		padding: 1rem 0;
+	}
+}
 
 .node__links{
 	ul.links{
@@ -291,20 +378,24 @@ article.comment{
 	.field__label{
 		font-size: 1.5rem;
 		margin: 1rem 0;
+		text-decoration: underline;
+		text-decoration-color: #ccc;
 	}
 
 	display: block;
 	.field__items{
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		.field__item{
 			a{
-				background-color: #fafafa;
-				padding: .5rem;
-				border: 1px solid #f0f0f0;
+				background-color: #333;
+				padding: .25rem;
 				border-radius: 5px;
 				margin-right: .25rem;
-				color: #666;
+				font-size: 12px;
+				color: #fff;
+				letter-spacing: 0.5px;
 			}
 		}
 	}
@@ -324,6 +415,28 @@ article.comment{
     @media all and (min-width: 1025px){
     	margin: 0 6rem;
     }
+}
+
+
+.views-list-teaser{
+	.view-content{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+		@include mq($m) {
+			grid-template-columns: 50% 50%;
+		}
+		@include mq($l) {
+			grid-template-columns: 33% 33% 33%;
+		}
+		div.views-row{
+			.field--name-body{
+				margin: 0;
+			}
+		}
+	}
 }
 
 footer.footer{
