@@ -1,1 +1,470 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}elements-of-type(html5-block){display:block}body{font-size:16px;background-color:#fff;font-family:"Roboto"}header.header{display:flex;align-items:center;background-color:#212121;height:75px;font-size:14px}header.header .container{display:flex;align-items:center}header.header .container .region-header{flex:1}header.header .container .region-primary-menu{flex:2}header.header .container .region-secondary-menu{flex:1}header.header .container .block-system-branding-block{display:flex;align-items:center}header.header .container .block-system-branding-block .site-name{padding:1rem;font-weight:700;color:#eee}header.header .container .block-system-branding-block .site-name a{text-decoration:none;color:#eee}header.header .container .block-system-branding-block .site-logo img{display:block;width:100%;height:auto}header.header .container nav.navigation ul.menu{display:flex;align-items:center}header.header .container nav.navigation ul.menu li a{padding:.5rem;text-decoration:none;color:#eee;font-size:14px}header.header .container nav.navigation ul.menu li a.is-active{text-decoration:underline}nav.breadcrumb{background-color:#eee;padding:1rem;font-size:13px}.container{width:320px;margin:auto}@media only screen and (min-width: 420px){.container{width:380px}}@media only screen and (min-width: 768px){.container{width:720px}}@media only screen and (min-width: 1024px){.container{width:980px}}@media only screen and (min-width: 1280px){.container{width:1220px}}.layout-content.container{background-color:#fff;padding:1rem}.messages{color:white;border:0;background-image:none;box-shadow:none;padding:1.5rem;border-radius:0}.messages.messages--status{background-color:#2e7d32}.messages.messages--warning{background-color:#f9a825;color:black}.messages.messages--error{background-color:#c62828}.marker{background:#c82f28;border-radius:5px;padding:6px;color:white;font-size:13px}h1{font-size:2.5rem}@media all and (min-width: 1025px){h1{font-size:3.5rem}}h2{font-size:2.5rem}h3{font-size:2rem}h4{font-size:1.75rem}h5{font-size:1.5rem}h6{font-size:1rem}h1,h2,h3,h4,h5,h6{margin:2rem 0;letter-spacing:-1px;font-weight:700}.item-list ul li{padding:.5rem 0;list-style:square}.item-list ul li a{padding:.5rem 0}.item-list ol li{padding:.5rem 0;list-style:decimal}.item-list ol li a{padding:.5rem 0}a{color:#212121}table{margin:1rem 0;border:1px solid #ccc;width:100%}table caption{margin:1rem 0}table thead tr th{padding:1rem;background-color:#ccc;border:1px solid #333}table tbody tr td{padding:1rem;border:1px solid #ccc}blockquote{font-size:2rem}nav.tabs{background-color:#fafafa;padding:1rem;border-radius:5px;margin:1rem 0}nav.tabs ul li a{padding:1rem;border-radius:5px;font-size:14px;background-color:#f0f0f0;color:#333}nav.tabs ul li a.is-active{background-color:#bfbfbf}nav.tabs ul.secondary li a{padding:.5rem}.form-text{padding:.5rem;border-radius:5px;border:1px solid #eee;font-size:1.25rem}.button{background-color:#fff;border:1px solid #333;padding:.75rem;border-radius:5px}.form-submit,.node__links ul.links li a{background-color:#333;border:0;border-radius:5px;padding:.75rem;color:white}p{font-size:18px;font-weight:300;color:#414141;letter-spacing:-0.01em;line-height:1.5rem;padding-bottom:2rem}i{font-style:italic}strong,b{font-weight:700}.page-node-type-article h1{text-align:center}.node__submitted,article.comment .comment__submitted{margin:1rem 0;font-size:13px;color:#666}.node__links ul.inline li{display:flex;padding:1rem 0}.field.field--name-field-tags{display:block}.field.field--name-field-tags .field__label{font-size:1.5rem;margin:1rem 0;text-decoration:underline;text-decoration-color:#ccc}.field.field--name-field-tags .field__items{display:flex;align-items:center;flex-wrap:wrap}.field.field--name-field-tags .field__items .field__item a{background-color:#333;padding:.25rem;border-radius:5px;margin-right:.25rem;font-size:12px;color:#fff;letter-spacing:0.5px}.field--name-field-image{margin-bottom:2rem}.field--name-field-image img{display:block;width:100%;height:auto}.field--name-body{margin:0}@media all and (min-width: 1025px){.field--name-body{margin:0 6rem}}.views-list-teaser .view-content{display:grid;grid-template-columns:100%;grid-template-rows:auto;grid-column-gap:1rem;grid-row-gap:1rem}@media only screen and (min-width: 768px){.views-list-teaser .view-content{grid-template-columns:50% 50%}}@media only screen and (min-width: 1024px){.views-list-teaser .view-content{grid-template-columns:33% 33% 33%}}.views-list-teaser .view-content div.views-row .field--name-body{margin:0}footer.footer{background-color:#fafafa;padding:1rem 0;min-height:10rem;display:flex;align-items:center}
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+/* line 5, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 19, ../sass/screen.scss */
+body {
+  font-size: 16px;
+  background-color: #fff;
+  font-family: "Roboto";
+}
+
+/* line 25, ../sass/screen.scss */
+header.header {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  font-size: 14px;
+}
+/* line 31, ../sass/screen.scss */
+header.header .container {
+  display: flex;
+  align-items: center;
+}
+/* line 34, ../sass/screen.scss */
+header.header .container .region-header {
+  flex: 1;
+}
+/* line 37, ../sass/screen.scss */
+header.header .container .region-primary-menu {
+  flex: 2;
+}
+/* line 40, ../sass/screen.scss */
+header.header .container .region-secondary-menu {
+  flex: 1;
+}
+/* line 43, ../sass/screen.scss */
+header.header .container .block-system-branding-block {
+  display: flex;
+  align-items: center;
+}
+/* line 46, ../sass/screen.scss */
+header.header .container .block-system-branding-block .site-name {
+  padding: 1rem;
+  font-weight: 700;
+  color: #eee;
+}
+/* line 50, ../sass/screen.scss */
+header.header .container .block-system-branding-block .site-name a {
+  text-decoration: none;
+  color: #eee;
+}
+/* line 56, ../sass/screen.scss */
+header.header .container .block-system-branding-block .site-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 64, ../sass/screen.scss */
+header.header .container nav.navigation ul.menu {
+  display: flex;
+  align-items: center;
+}
+/* line 68, ../sass/screen.scss */
+header.header .container nav.navigation ul.menu li a {
+  padding: .5rem;
+  text-decoration: none;
+  color: #eee;
+  font-size: 14px;
+}
+/* line 73, ../sass/screen.scss */
+header.header .container nav.navigation ul.menu li a.is-active {
+  text-decoration: underline;
+}
+
+/* line 83, ../sass/screen.scss */
+nav.breadcrumb {
+  padding: 1rem;
+  font-size: 13px;
+}
+
+/* line 98, ../sass/screen.scss */
+.container {
+  width: 320px;
+  margin: auto;
+}
+@media only screen and (min-width: 420px) {
+  /* line 98, ../sass/screen.scss */
+  .container {
+    width: 380px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 98, ../sass/screen.scss */
+  .container {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 98, ../sass/screen.scss */
+  .container {
+    width: 980px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 98, ../sass/screen.scss */
+  .container {
+    width: 1220px;
+  }
+}
+
+/* line 115, ../sass/screen.scss */
+.layout-content.container {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+/* line 120, ../sass/screen.scss */
+.messages {
+  color: white;
+  border: 0;
+  background-image: none;
+  box-shadow: none;
+  padding: 1.5rem;
+  border-radius: 0;
+}
+/* line 127, ../sass/screen.scss */
+.messages.messages--status {
+  background-color: #2e7d32;
+}
+/* line 130, ../sass/screen.scss */
+.messages.messages--warning {
+  background-color: #f9a825;
+  color: black;
+}
+/* line 134, ../sass/screen.scss */
+.messages.messages--error {
+  background-color: #c62828;
+}
+
+/* line 139, ../sass/screen.scss */
+.marker {
+  background: #c82f28;
+  border-radius: 5px;
+  padding: 6px;
+  color: white;
+  font-size: 13px;
+}
+
+/* line 147, ../sass/screen.scss */
+h1 {
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-size: 2.5rem;
+}
+@media all and (min-width: 1025px) {
+  /* line 147, ../sass/screen.scss */
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* line 155, ../sass/screen.scss */
+h2 {
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-size: 2.5rem;
+}
+
+/* line 160, ../sass/screen.scss */
+h3 {
+  font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-size: 2rem;
+}
+
+/* line 165, ../sass/screen.scss */
+h4 {
+  font-size: 1.75rem;
+}
+
+/* line 169, ../sass/screen.scss */
+h5 {
+  font-size: 1.5rem;
+}
+
+/* line 173, ../sass/screen.scss */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 177, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+/* line 186, ../sass/screen.scss */
+.item-list ul li {
+  padding: .5rem 0;
+  list-style: square;
+}
+/* line 189, ../sass/screen.scss */
+.item-list ul li a {
+  padding: .5rem 0;
+}
+/* line 196, ../sass/screen.scss */
+.item-list ol li {
+  padding: .5rem 0;
+  list-style: decimal;
+}
+/* line 199, ../sass/screen.scss */
+.item-list ol li a {
+  padding: .5rem 0;
+}
+
+/* line 207, ../sass/screen.scss */
+a {
+  color: #212121;
+}
+
+/* line 211, ../sass/screen.scss */
+table {
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+/* line 215, ../sass/screen.scss */
+table caption {
+  margin: 1rem 0;
+}
+/* line 220, ../sass/screen.scss */
+table thead tr th {
+  padding: 1rem;
+  background-color: #ccc;
+  border: 1px solid #333;
+}
+/* line 230, ../sass/screen.scss */
+table tbody tr td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* line 238, ../sass/screen.scss */
+blockquote {
+  font-size: 2rem;
+}
+
+/* line 246, ../sass/screen.scss */
+nav.tabs {
+  background-color: #fafafa;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+/* line 254, ../sass/screen.scss */
+nav.tabs ul li a {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+/* line 260, ../sass/screen.scss */
+nav.tabs ul li a.is-active {
+  background-color: #bfbfbf;
+}
+/* line 271, ../sass/screen.scss */
+nav.tabs ul.secondary li a {
+  padding: .5rem;
+}
+
+/* line 281, ../sass/screen.scss */
+.form-text {
+  padding: .5rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  font-size: 1.25rem;
+}
+
+/* line 306, ../sass/screen.scss */
+.button {
+  background-color: #fff;
+  border: 1px solid #333;
+  padding: .75rem;
+  border-radius: 5px;
+}
+
+/* line 313, ../sass/screen.scss */
+.form-submit, .node__links ul.links li a {
+  background-color: #333;
+  border: 0;
+  border-radius: 5px;
+  padding: .75rem;
+  color: white;
+}
+
+/* line 321, ../sass/screen.scss */
+p {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.58;
+  padding-bottom: 2rem;
+}
+
+/* line 334, ../sass/screen.scss */
+i {
+  font-style: italic;
+}
+
+/* line 338, ../sass/screen.scss */
+strong, b {
+  font-weight: 700;
+}
+
+/* line 354, ../sass/screen.scss */
+.page-node-type-article h1 {
+  text-align: center;
+}
+
+/* line 359, ../sass/screen.scss */
+.node__submitted, article.comment .comment__submitted {
+  margin: 1rem 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* line 365, ../sass/screen.scss */
+.node__links ul.inline li {
+  display: flex;
+  padding: 1rem 0;
+}
+
+/* line 383, ../sass/screen.scss */
+.field.field--name-field-tags {
+  display: block;
+}
+/* line 384, ../sass/screen.scss */
+.field.field--name-field-tags .field__label {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+/* line 392, ../sass/screen.scss */
+.field.field--name-field-tags .field__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* line 397, ../sass/screen.scss */
+.field.field--name-field-tags .field__items .field__item a {
+  background-color: #333;
+  padding: .25rem;
+  border-radius: 5px;
+  margin-right: .25rem;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* line 410, ../sass/screen.scss */
+.field--name-field-image {
+  margin-bottom: 2rem;
+}
+/* line 412, ../sass/screen.scss */
+.field--name-field-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 428, ../sass/screen.scss */
+.views-list-teaser .view-content {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  /* line 428, ../sass/screen.scss */
+  .views-list-teaser .view-content {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 428, ../sass/screen.scss */
+  .views-list-teaser .view-content {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+/* line 441, ../sass/screen.scss */
+.views-list-teaser .view-content div.views-row .field--name-body {
+  margin: 0;
+}
+
+/* line 448, ../sass/screen.scss */
+footer.footer {
+  background-color: #fafafa;
+  padding: 1rem 0;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+}

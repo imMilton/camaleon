@@ -25,7 +25,7 @@ body{
 header.header{
 	display: flex;
 	align-items: center;
-	background-color: #212121;
+	
 	height: 75px;
 	font-size: 14px;
 	.container{
@@ -81,7 +81,6 @@ header.header{
 }
 
 nav.breadcrumb{
-    background-color: #eee;
     padding: 1rem;
     font-size: 13px;
 	ol{
@@ -146,6 +145,7 @@ $xl: 1280px;
 }
 
 h1{
+	font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 	font-size: 2.5rem;
 	@media all and (min-width: 1025px){
 		font-size: 3.5rem;
@@ -153,10 +153,12 @@ h1{
 }
 
 h2{
+	font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 	font-size: 2.5rem;
 }
 
 h3{
+	font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 	font-size: 2rem;
 }
 
@@ -317,11 +319,15 @@ nav.tabs{
 }
 
 p{
+	font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+    // font-size: 18px;
+    // font-weight: 300;
+    // letter-spacing: -0.01em;
+    font-weight: 400;
+    font-style: normal;
     font-size: 18px;
-    font-weight: 300;
-    color: #414141;
-    letter-spacing: -0.01em;
-    line-height: 1.5rem;
+    line-height: 1.58;
+    // letter-spacing: -.003em;
     padding-bottom: 2rem;
 }
 
@@ -410,12 +416,12 @@ article.comment{
 	}
 }
 
-.field--name-body{
-	margin: 0;
-    @media all and (min-width: 1025px){
-    	margin: 0 6rem;
-    }
-}
+// .field--name-body{
+// 	margin: 0;
+//     @media all and (min-width: 1025px){
+//     	margin: 0 6rem;
+//     }
+// }
 
 
 .views-list-teaser{
