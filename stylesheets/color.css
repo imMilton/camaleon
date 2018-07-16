@@ -1,0 +1,24 @@
+/* line 1, ../sass/color.scss */
+a {
+  color: #0071b3;
+}
+
+/* line 5, ../sass/color.scss */
+p {
+  color: #3b3b3b;
+}
+
+/* line 9, ../sass/color.scss */
+header.header {
+  background-color: #055a8e;
+}
+
+/* line 13, ../sass/color.scss */
+nav.breadcrumb {
+  background-color: #cccccc;
+}
+
+/* line 17, ../sass/color.scss */
+footer.footer {
+  background-color: #292929;
+}
