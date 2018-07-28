@@ -42,13 +42,20 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+{# The My Theme navbar may be disabled in theme settings #}
+{% if full_width %}
+  <div class="layout-container full-width">
+{% else %}
+  <div class="layout-container">
+{% endif %}
 
   <header role="banner" class="header">
     <div class="container">
     {{ page.header }}
+
     {{ page.primary_menu }}
     {{ page.secondary_menu }}
+
     </div>
   </header>
 

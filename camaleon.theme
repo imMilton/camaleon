@@ -1,0 +1,8 @@
+<?php
+
+/* Be able to toggle the My Theme navbar */
+function camaleon_preprocess_page(&$variables) {
+
+  $variables['full_width'] = theme_get_setting('full_width');
+  
+}
