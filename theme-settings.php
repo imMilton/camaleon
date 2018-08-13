@@ -7,22 +7,51 @@ function camaleon_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\For
     return;
   }
 
-  $form['custom'] = array(
+  $form['layout'] = array(
     '#type'          => 'details',
-    '#title'         => t('Camaleon settings'),
+    '#title'         => t('Layout settings'),
     '#open' => TRUE,
   );
 
-  $form['custom']['width'] = array(
-    '#type'          => 'textfield',
-    '#title'         => t('Width'),
-    '#default_value' => theme_get_setting('width'),
-    '#description'   => t("Place this text in the widget spot on your site."),
-  );
-  $form['custom']['full_width'] = array(
+  $form['layout']['fluid_width'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('Full Width'),
-    '#default_value' => theme_get_setting('full_width'),
-    '#description'   => t("Place this text in the widget spot on your site."),
+    '#title'         => t('Fluid width'),
+    '#default_value' => theme_get_setting('fluid_width'),
+    '#description'   => t("A full container, spanning the entire width of the viewport."),
   );
+
+  $form['front'] = array(
+    '#type'          => 'details',
+    '#title'         => t('Front page settings'),
+    '#open' => TRUE,
+  );
+
+  $form['front']['hero_enable'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Enable front page hero'),
+    '#default_value' => theme_get_setting('hero_enable'),
+    '#description'   => t("A big banner in front page."),
+  );
+
+  $form['front']['hero_title'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Text'),
+    '#default_value' => theme_get_setting('hero_title'),
+    '#description'   => t("A big title."),
+  );
+
+  $form['front']['hero_text'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Text'),
+    '#default_value' => theme_get_setting('hero_text'),
+    '#description'   => t("A big description."),
+  );
+
+  $form['front']['hero_link'] = array(
+    '#type'          => 'url',
+    '#title'         => t('Link'),
+    '#default_value' => theme_get_setting('hero_link'),
+    '#description'   => t("A big link."),
+  );
+
 }

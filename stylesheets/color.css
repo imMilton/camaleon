@@ -13,12 +13,17 @@ header.header {
   background-color: #055a8e;
 }
 
-/* line 13, ../sass/color.scss */
+/* line 15, ../sass/color.scss */
+section.hero {
+  background-color: #055a8e;
+}
+
+/* line 19, ../sass/color.scss */
 nav.breadcrumb {
   background-color: #cccccc;
 }
 
-/* line 17, ../sass/color.scss */
+/* line 23, ../sass/color.scss */
 footer.footer {
   background-color: #292929;
 }

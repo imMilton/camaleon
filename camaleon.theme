@@ -3,6 +3,12 @@
 /* Be able to toggle the My Theme navbar */
 function camaleon_preprocess_page(&$variables) {
 
-  $variables['full_width'] = theme_get_setting('full_width');
-  
+	// Layout
+	$variables['fluid_width'] = theme_get_setting('fluid_width');
+
+	// Frontpage
+	$variables['hero_enable'] = theme_get_setting('hero_enable');
+	$variables['hero_title'] = theme_get_setting('hero_title');
+	$variables['hero_text'] = theme_get_setting('hero_text');
+	$variables['hero_link'] = theme_get_setting('hero_link');
 }

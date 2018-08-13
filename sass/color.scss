@@ -10,6 +10,12 @@ header.header{
 	background-color: #055a8e;
 }
 
+$primary: #055a8e;
+
+section.hero{
+	background-color: $primary;
+}
+
 nav.breadcrumb{
 	background-color: #cccccc;
 }
