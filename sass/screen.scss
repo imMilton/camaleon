@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Roboto');
 
 
 @mixin mq($min) {
@@ -21,9 +21,26 @@ $xl: 1280px;
 $base-font-size: 16px;
 
 body{
-	font-size: $base-font-size;
+	// font-size: $base-font-size;
 	background-color: #eee;
-	font-family: "Nunito";
+	&.font-size-14{
+		font-size: 14px;
+	}
+	&.font-size-16{
+		font-size: 16px;
+	}
+	&.font-size-18{
+		font-size: 18px;
+	}
+	&.font-family-roboto{
+		font-family: 'Roboto', sans-serif;
+	}
+	&.font-family-nunito{
+		font-family: 'Nunito', sans-serif;
+	}
+	&.font-family-montserrat{
+		font-family: 'Montserrat', sans-serif;
+	}
 }
 
 header.header{

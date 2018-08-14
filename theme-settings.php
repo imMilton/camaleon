@@ -20,6 +20,36 @@ function camaleon_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\For
     '#description'   => t("A full container, spanning the entire width of the viewport."),
   );
 
+  $form['ui'] = array(
+    '#type'          => 'details',
+    '#title'         => t('UI settings'),
+    '#open' => TRUE,
+  );
+
+  $form['ui']['font_family'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Font family'),
+    '#options' => [
+      'roboto' => t('Roboto'),
+      'montserrat' => t('Montserrat'),
+      'nunito' => t('Nunito'),
+    ],
+    '#default_value' => theme_get_setting('font_family'),
+    '#description'   => t("..."),
+  );
+
+  $form['ui']['font_size'] = array(
+    '#type'          => 'select',
+    '#title'         => t('Font size'),
+    '#options' => [
+      '14' => t('14'),
+      '16' => t('16'),
+      '18' => t('18'),
+    ],
+    '#default_value' => theme_get_setting('font_size'),
+    '#description'   => t("..."),
+  );
+
   $form['front'] = array(
     '#type'          => 'details',
     '#title'         => t('Front page settings'),
