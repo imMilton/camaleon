@@ -109,3 +109,27 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+font-montserrat:
+  version: VERSION
+  css:
+    component:
+      fonts/montserrat/stylesheet.css: {}
+
+font-raleway:
+  version: VERSION
+  css:
+    component:
+      fonts/raleway/stylesheet.css: {}
+
+font-roboto:
+  version: VERSION
+  css:
+    component:
+      fonts/roboto/stylesheet.css: {}
+
+font-playfair:
+  version: VERSION
+  css:
+    component:
+      fonts/playfair/stylesheet.css: {}

@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Roboto');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Roboto');
 
 
 @mixin mq($min) {
@@ -32,14 +32,17 @@ body{
 	&.font-size-18{
 		font-size: 18px;
 	}
-	&.font-family-roboto{
-		font-family: 'Roboto', sans-serif;
+	&.font-family-playfair{
+		font-family: 'playfair_displayregular', sans-serif;
 	}
-	&.font-family-nunito{
-		font-family: 'Nunito', sans-serif;
+	&.font-family-roboto{
+		font-family: 'robotoregular', sans-serif;
+	}
+	&.font-family-raleway{
+		font-family: 'ralewaymedium', sans-serif;
 	}
 	&.font-family-montserrat{
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'montserratregular', sans-serif;
 	}
 }
 

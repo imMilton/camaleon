@@ -8,6 +8,17 @@ function camaleon_preprocess_page(&$variables) {
 
 	// UI
 	$variables['font_family'] = theme_get_setting('font_family');
+
+	if($variables['font_family'] == 'montserrat'){
+		$variables['#attached']['library'][] =  'camaleon/font-montserrat';
+	}elseif ($variables['font_family'] == 'playfair') {
+		$variables['#attached']['library'][] =  'camaleon/font-playfair';
+	}elseif ($variables['font_family'] == 'raleway') {
+		$variables['#attached']['library'][] =  'camaleon/font-raleway';
+	}elseif ($variables['font_family'] == 'roboto') {
+		$variables['#attached']['library'][] =  'camaleon/font-roboto';
+	}
+
 	$variables['font_size'] = theme_get_setting('font_size');
 
 	// Frontpage

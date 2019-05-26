@@ -30,9 +30,10 @@ function camaleon_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\For
     '#type'          => 'select',
     '#title'         => t('Font family'),
     '#options' => [
-      'roboto' => t('Roboto'),
       'montserrat' => t('Montserrat'),
-      'nunito' => t('Nunito'),
+      'playfair' => t('Playfair display'),
+      'raleway' => t('Raleway'),
+      'roboto' => t('Roboto'),
     ],
     '#default_value' => theme_get_setting('font_family'),
     '#description'   => t("..."),
